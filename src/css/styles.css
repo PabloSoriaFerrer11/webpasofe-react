@@ -1,0 +1,421 @@
+   /* Variables */
+
+   :root {
+       --bg-color: #f4f4f4;
+       --bg-color-dark: #000000ec;
+
+       --text-color: #333;
+       --text-color-dark: #333;
+
+       --border-shadow: rgba(0, 78, 245, 0.747);
+       --border-shadow-dark: rgb(255, 0, 0);
+
+       --container-bg: #fff;
+       --container-bg-dark: #2c2c2c;
+   }
+
+
+   /* Reset básico y estilos generales */
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       font-family: 'Arial', sans-serif;
+   }
+
+   body {
+       line-height: 1.6;
+       background-color: var(--bg-color);
+       color: var(--text-color);
+       padding: 20px;
+       transition: background-color 0.3s ease, color 0.3s ease;
+   }
+
+   body.dark {
+       line-height: 1.6;
+       background-color: var(--bg-color-dark);
+       color: var(--text-color-dark);
+       padding: 20px;
+   }
+
+   header,
+   main,
+   footer {
+       max-width: 1050px;
+
+       margin: 0 auto;
+       padding: 20px;
+       background: var(--container-bg);
+       border-radius: 8px;
+       box-shadow: 0 2px 5px var(--border-shadow);
+       margin-bottom: 20px;
+       transition: background-color 0.3s ease, box-shadow 0.3s ease;
+   }
+
+   /* background: var(--container-bg-dark);*/
+   header.dark,
+   main.dark,
+   footer.dark {
+       box-shadow: 0 2px 5px var(--border-shadow-dark);
+   }
+
+   /* Estilos del encabezado */
+   header {
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       position: relative;
+   }
+
+   .main-content {
+       flex: 2;
+   }
+
+
+   /* BTN cambio */
+   #theme-toggle {
+       position: absolute;
+       right: 10px;
+       top: 10px;
+       background: none;
+       border: none;
+       font-size: 1.5rem;
+       cursor: pointer;
+   }
+
+   h1 {
+       color: #2c3e50;
+       margin-bottom: 10px;
+   }
+
+   /* Estilos de navegación */
+   nav ul {
+       display: flex;
+       justify-content: center;
+       list-style: none;
+       gap: 15px;
+       margin-top: 15px;
+   }
+
+   nav a {
+       text-decoration: none;
+       color: #3498db;
+       font-weight: bold;
+   }
+
+   /* Estilos del contenido principal */
+   section {
+       margin: 20px 0;
+   }
+
+   p {
+       text-align: justify;
+   }
+
+   h2 {
+       color: #2c3e50;
+       border-bottom: 1px solid #eee;
+       padding-bottom: 5px;
+       margin-bottom: 10px;
+   }
+
+   h4 {
+       color: #2c3e50;
+       text-align: center;
+       padding-bottom: 5px;
+       margin-bottom: 10px;
+   }
+
+   /* Estilos del pie de página */
+   footer {
+       text-align: center;
+       font-size: 0.9em;
+       color: #7f8c8d;
+   }
+
+   .iconosFooter {
+       text-align: end;
+   }
+
+   .icon-link {
+       padding: 0.5em;
+   }
+
+
+   /* Responsive */
+   @media (max-width: 600px) {
+       body {
+           padding: 10px;
+       }
+
+       nav ul {
+           flex-direction: column;
+           gap: 5px;
+       }
+   }
+
+   /* Dropdown */
+   .dropdown {
+       position: relative;
+   }
+
+   .dropdown-menu {
+       display: none;
+       /* Añade un margen superior invisible para solapar el área del botón */
+       margin-top: 10px;
+       /* Y un padding superior negativo para compensar */
+       padding-top: 10px;
+       position: absolute;
+       top: 100%;
+       left: 0;
+       background: #444;
+       min-width: 160px;
+       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+   }
+
+   .dropdown:hover .dropdown-menu {
+       display: block;
+   }
+
+   /* Triángulo/conector invisible entre botón y menú */
+   .dropdown-menu::before {
+       content: "";
+       position: absolute;
+       top: -10px;
+       left: 20px;
+       width: 100%;
+       height: 10px;
+       background: transparent;
+   }
+
+   .dropdown-menu li {
+       padding: 10px;
+   }
+
+   .dropdown-menu a:hover {
+       background: #007bff;
+   }
+
+   .padding-left {
+       padding-left: 20px;
+   }
+
+   .aling-center {
+       text-align: center;
+   }
+
+   .aling-left {
+       text-align: left;
+   }
+
+   .sidebar {
+       flex: 1;
+       background: #f8f9fa;
+       padding: 20px;
+       border-radius: 8px;
+       box-shadow: 0 2px 5px var(--border-shadow);
+         margin-left: 20px;
+   }
+    .sidebar.dark {
+         box-shadow: 0 2px 5px var(--border-shadow-dark);
+    }
+
+   /* Estilos para el sidebar */
+   .sidebar h3 {
+       color: #2c3e50;
+       border-bottom: 1px solid #eee;
+       padding-bottom: 10px;
+       margin-bottom: 15px;
+   }
+
+   .sidebar ul {
+       padding-left: 20px;
+       margin-bottom: 20px;
+   }
+
+   .sidebar li {
+       margin-bottom: 8px;
+   }
+
+   .highlight-box {
+       background: #e3f2fd;
+       padding: 15px;
+       border-radius: 8px;
+       margin-top: 20px;
+   }
+
+   .signup-button {
+       background-color: #3498db;
+       color: white;
+       border: none;
+       padding: 10px 15px;
+       border-radius: 5px;
+       cursor: pointer;
+       margin-top: 10px;
+       width: 100%;
+   }
+
+   .signup-button:hover {
+       background-color: #2980b9;
+   }
+
+   /* Responsive */
+   @media (max-width: 768px) {
+       .two-column-layout {
+           flex-direction: column;
+       }
+
+       .three-column-layout {
+           flex-direction: column;
+       }
+
+       .sidebar {
+           margin-top: 20px;
+       }
+   }
+
+   .two-column-layout {
+       display: flex;
+       gap: 30px;
+   }
+
+   .three-column-layout {
+       display: flex;
+   }
+
+   .timeline {
+       position: relative;
+       list-style: none;
+       padding-left: 40px;
+       /* espacio para la línea */
+       margin: 20px 0;
+   }
+
+   .timeline::before {
+       content: "";
+       position: absolute;
+       top: 0;
+       left: 15px;
+       /* centrado respecto a los puntos */
+       width: 2px;
+       height: 100%;
+       background-color: #333;
+   }
+
+   .timeline li {
+       position: relative;
+       margin-bottom: 30px;
+   }
+
+   .timeline li::before {
+       content: "";
+       position: absolute;
+       left: -34px;
+       /* centra el punto con la línea */
+       top: 5px;
+       width: 16px;
+       height: 16px;
+       background-color: white;
+       border: 2px solid #333;
+       border-radius: 50%;
+   }
+
+   .timeline .year {
+       font-weight: bold;
+       margin-bottom: 5px;
+   }
+
+   .timeline .desc {
+       color: #555;
+   }
+
+/* ==== ToDo List Styles ==== */
+
+.todo-container {
+    background-color: var(--container-bg);
+    color: var(--text-color);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 0 10px var(--border-shadow);
+    transition: all 0.3s ease;
+}
+
+.dark-mode .todo-container {
+    background-color: var(--container-bg-dark);
+    color: var(--text-color-dark);
+    box-shadow: 0 0 10px var(--border-shadow-dark);
+}
+
+/* Encabezado de la sección */
+.todo-container h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--border-shadow);
+    padding-bottom: 0.5rem;
+}
+
+/* Texto descriptivo */
+.todo-description {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.dark-mode .todo-description {
+    color: #ccc;
+}
+
+/* Lista de tareas */
+.todo-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.todo-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, background-color 0.3s;
+}
+
+.todo-item:hover {
+    transform: translateY(-2px);
+    background-color: #eef3ff;
+}
+
+.dark-mode .todo-item {
+    background-color: #3b3b3b;
+}
+
+.dark-mode .todo-item:hover {
+    background-color: #4a4a4a;
+}
+
+/* Icono o marca de tarea (si lo añades más adelante) */
+.todo-item::before {
+    content: "✔️";
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Enlaces o botones dentro de la lista */
+.todo-item a {
+    color: var(--border-shadow);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.todo-item a:hover {
+    text-decoration: underline;
+}
+
+/* Transición entre modos */
+body, .todo-container, .todo-item {
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
