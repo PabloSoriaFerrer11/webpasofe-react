@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { ThemeToggle } from "../buttons/ThemeToggle";
 
 import logo from '../assets/images/icons/PASOFE.png'
 
@@ -10,7 +11,8 @@ export const PageHeader = () => {
             <div className="logo">
                 <img src={logo} alt="Logo de DEV-PASOFE" width="100"></img>
             </div>
-            <button id="theme-toggle" className="toggle-btn">🌙 Oscuro / ☀️ Claro</button>
+            <ThemeToggle />
+        
         </div>
 
 
@@ -25,12 +27,17 @@ export const PageHeader = () => {
                 <li className="dropdown">
                     <a>Proyectos ▼</a>
                     <ul className="dropdown-menu">
-                        <li><a href="flutter_amm.html">Airosft Matchmaking</a></li>
-                        <li><a href="">Estrategy</a></li>
-                        <li><a href="">Prácticas</a></li>
+                        <li><Link to="/proyectos/flutter-amm">Airsoft Matchmaking</Link></li>
+                        <li><Link to="/WIP">Prácticas</Link></li>
                     </ul>
                 </li>
-                
+                <li className="dropdown">
+                    <a>En Dominio ▼</a>
+                    <ul className="dropdown-menu">
+                        <li><Link to="/proyectos/estrategy">Estrategy</Link></li>
+                        <li><Link to="/proyectos/Heretics">Heretics</Link></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>

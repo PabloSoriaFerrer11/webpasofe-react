@@ -1,5 +1,6 @@
-function flutterAMM() {
+function FlutterAMM() {
     return (
+        <main>
         <div className="two-column-layout">
             <section id="proyecto">
                 <h2>Airosft Matchmaking</h2>
@@ -49,8 +50,12 @@ function flutterAMM() {
                 </div>
             </aside>
         </div>
-    
+    </main>
     );
 }
 
-export default flutterAMM;
+export const FlutterAMMPage = () => {
+    return (
+        <FlutterAMM />
+    );
+}

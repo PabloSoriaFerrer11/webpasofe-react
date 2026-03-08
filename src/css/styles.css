@@ -36,6 +36,7 @@
        background-color: var(--bg-color-dark);
        color: var(--text-color-dark);
        padding: 20px;
+       transition: background-color 0.3s ease, color 0.3s ease;
    }
 
    header,
@@ -71,16 +72,20 @@
        flex: 2;
    }
 
+   .center-text {
+        text-align: center;
+    }
 
    /* BTN cambio */
-   #theme-toggle {
+   .theme-btn {
        position: absolute;
-       right: 10px;
-       top: 10px;
+       right: 20px;
+       top: 20px;
        background: none;
        border: none;
        font-size: 1.5rem;
        cursor: pointer;
+       z-index: 10;
    }
 
    h1 {
