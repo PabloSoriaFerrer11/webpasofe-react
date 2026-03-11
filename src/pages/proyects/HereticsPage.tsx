@@ -3,7 +3,7 @@ function Heretics(){
   
             <div className="two-columns-layout">
                 <h2>Heretics FAN</h2>
-                <p>Como comento en la página principal, me considero una persona creativa y uno de mis Hobies consiste en seguir los deportes 
+                <p>Como comento en la página principal, me considero una persona creativa y uno de mis hobbies consiste en seguir los deportes 
                     electrónicos. Uno de mis equipos favoritos es el Heretics.</p>
                 <br></br>
                 <h4>Oportunidad</h4>
@@ -37,7 +37,7 @@ function OficialLinkPage(){
 function FanPage(){
     return(
         <div  className="highlight-box center-text">   
-            <a href="" target="_blank" rel="noopener noreferrer">VISITA EL PROYECTO</a>
+            <a href="https://heretics.dev-pasofe.com/" target="_blank" rel="noopener noreferrer">VISITA EL PROYECTO</a>
         </div>
     );
 }
