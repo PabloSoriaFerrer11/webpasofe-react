@@ -145,9 +145,14 @@
    body.dark .signup-button {
        background-color: #c0392b;
    }
-
+   
    body.dark .signup-button:hover {
        background-color: #e74c3c;
+   }
+   
+   body.dark .todo-date {
+       color: #aaa;
+       background: #444;
    }
 
    /* Estilos del encabezado */
@@ -487,6 +492,18 @@
 
 .todo-item a:hover {
     text-decoration: underline;
+}
+
+/* Fecha en items de la ToDo list */
+.todo-date {
+    display: inline-block;
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+    color: #888;
+    background: #eee;
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    vertical-align: middle;
 }
 
 /* Transición entre modos */

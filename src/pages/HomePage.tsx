@@ -13,9 +13,9 @@ function HomeCV(){
                 <p>Actualmente estoy trabajando como desarrollador en <a href="https://www.ahora.es/"
                         target="_blank">AHORA</a>, una empresa dedicada a la creación de soluciones
                     para otras empresas con tecnologías LOWCODE o un ERP propio.</p>
-                <p>En mi tiempo libre me gusta desarrollar proyectos personales, como <a href="/flutter_amm.html"
-                        target="_blank">Airosft Matchmaking</a>, un proyecto que busca mejorar la experiencia de los
-                    jugadores de Airosft.
+                <p>En mi tiempo libre me gusta desarrollar proyectos personales, como <a href="/proyectos/flutter_amm.html"
+                        target="_blank">Airsoft Matchmaking</a>, un proyecto que busca mejorar la experiencia de los
+                    jugadores de Airsoft.
                     <br></br>Si quieres saber más sobre este proyecto, puedes visitar la sección de proyectos en el menú de
                     navegación.
                 </p>
@@ -60,7 +60,7 @@ function HomeTrayectory(){
                         </li>
 
                     </ul>
-                    <p>Más de 3 años de experiencia en el séctor del desarrollo. Conocimientos de lenguajes de
+                    <p>Más de 3 años de experiencia en el sector del desarrollo. Conocimientos de lenguajes de
                         programación
                         como: <strong> JS, TS, VB6, C# </strong> Además de conocer tambien el lenguaje de
                          <strong> T-SQL </strong>de SQL SERVER. Con el tiempo he ido aprendiendo nuevas tecnologías 

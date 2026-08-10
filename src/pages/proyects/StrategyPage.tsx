@@ -4,7 +4,7 @@ function Strategy(){
     return (
         <div className="two-columns-layout">
             <h2>Strategy</h2>
-            <p> Me declaro tambien fan de los juegos de mesa, asi que decidñi intentar recrear uno de mis favoritos, El Risk. 
+            <p> Me declaro tambien fan de los juegos de mesa, asi que decidí intentar recrear uno de mis favoritos, El Risk. 
                  </p>
             <br></br>
             <h4>Oportunidad</h4>

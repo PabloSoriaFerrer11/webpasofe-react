@@ -3,17 +3,17 @@ function FlutterAMM() {
         <main>
         <div className="two-column-layout">
             <section id="proyecto">
-                <h2>Airosft Matchmaking</h2>
+                <h2>Airsoft Matchmaking</h2>
                 <p>Mi primer proyecto "grande" desarrollado en FLUTTER para dispositivos Android y con posibilidad para
                     IOS.</p>
                 <h4>Oportunidad</h4>
                 <p>La idea de este proyecto me surge despues de que un amigo me invitara a unas partidas de este deporte
                     y ver como se gestionaban.
-                    El mundo del Airosft se organiza en base a grupos de mensajería con 200 personas donde se indica un
+                    El mundo del Airsoft se organiza en base a grupos de mensajería con 200 personas donde se indica un
                     fecha
                     y la gente se va apuntando en una lista interminable. Noté que faltaba un poco de tecnología para
                     llevar todos estas listas
-                    y ya por 2024 comencé el documento "Airosft Encounter" </p>
+                    y ya por 2024 comencé el documento "Airsoft Encounter" </p>
                 <br></br>
                 <h4>Objetivo</h4>
                 <p>El objetivo de este proyecto es crear una aplicación que permita a los jugadores de airsoft encontrar
@@ -25,7 +25,7 @@ function FlutterAMM() {
                 <h4>Características Principales</h4>
                 <ul className="padding-left">
                     <li className="">Creación de partidas</li>
-                    <li className="">% de Vicotoria, KDA para los jugadores y sistema de KARMA</li>
+                    <li className="">% de Victoria, KDA para los jugadores y sistema de KARMA</li>
                     <li className="">Gestión fácil de Eventos</li>
                 </ul>
                
