@@ -5,7 +5,7 @@
        --bg-color-dark: #000000ec;
 
        --text-color: #333;
-       --text-color-dark: #333;
+       --text-color-dark: #f0f0f0;
 
        --border-shadow: rgba(0, 78, 245, 0.747);
        --border-shadow-dark: rgb(255, 0, 0);
@@ -53,11 +53,101 @@
        transition: background-color 0.3s ease, box-shadow 0.3s ease;
    }
 
-   /* background: var(--container-bg-dark);*/
-   header.dark,
-   main.dark,
-   footer.dark {
+   /* ===== DARK MODE ===== */
+   body.dark header,
+   body.dark main,
+   body.dark footer {
+       background: var(--container-bg-dark);
        box-shadow: 0 2px 5px var(--border-shadow-dark);
+   }
+
+   body.dark .sidebar {
+       background: var(--container-bg-dark);
+       box-shadow: 0 2px 5px var(--border-shadow-dark);
+   }
+
+   body.dark h1,
+   body.dark h2,
+   body.dark h3,
+   body.dark h4 {
+       color: #f0f0f0;
+   }
+
+   body.dark h2 {
+       border-bottom-color: #555;
+   }
+
+   body.dark .sidebar h3 {
+       border-bottom-color: #555;
+   }
+
+   body.dark footer {
+       color: #aaa;
+   }
+
+   body.dark nav a {
+       color: #5dade2;
+   }
+
+   body.dark .dropdown-menu {
+       background: #555;
+       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+   }
+
+   body.dark .dropdown-menu a:hover {
+       background: #c0392b;
+   }
+
+   body.dark .highlight-box {
+       background: #3a3a3a;
+       color: #f0f0f0;
+   }
+
+   body.dark .timeline::before {
+       background-color: #888;
+   }
+
+   body.dark .timeline li::before {
+       background-color: var(--container-bg-dark);
+       border-color: #888;
+   }
+
+   body.dark .timeline .desc {
+       color: #ccc;
+   }
+
+   body.dark .todo-container {
+       background-color: var(--container-bg-dark);
+       color: #f0f0f0;
+       box-shadow: 0 0 10px var(--border-shadow-dark);
+   }
+
+   body.dark .todo-container h2 {
+       border-bottom-color: var(--border-shadow-dark);
+   }
+
+   body.dark .todo-description {
+       color: #ccc;
+   }
+
+   body.dark .todo-item {
+       background-color: #3b3b3b;
+   }
+
+   body.dark .todo-item:hover {
+       background-color: #4a4a4a;
+   }
+
+   body.dark .todo-item a {
+       color: var(--border-shadow-dark);
+   }
+
+   body.dark .signup-button {
+       background-color: #c0392b;
+   }
+
+   body.dark .signup-button:hover {
+       background-color: #e74c3c;
    }
 
    /* Estilos del encabezado */
@@ -221,9 +311,6 @@
        box-shadow: 0 2px 5px var(--border-shadow);
          margin-left: 20px;
    }
-    .sidebar.dark {
-         box-shadow: 0 2px 5px var(--border-shadow-dark);
-    }
 
    /* Estilos para el sidebar */
    .sidebar h3 {
@@ -345,12 +432,6 @@
     transition: all 0.3s ease;
 }
 
-.dark-mode .todo-container {
-    background-color: var(--container-bg-dark);
-    color: var(--text-color-dark);
-    box-shadow: 0 0 10px var(--border-shadow-dark);
-}
-
 /* Encabezado de la sección */
 .todo-container h2 {
     font-size: 1.6rem;
@@ -365,10 +446,6 @@
     margin-bottom: 1rem;
     font-size: 0.95rem;
     color: #555;
-}
-
-.dark-mode .todo-description {
-    color: #ccc;
 }
 
 /* Lista de tareas */
@@ -392,14 +469,6 @@
 .todo-item:hover {
     transform: translateY(-2px);
     background-color: #eef3ff;
-}
-
-.dark-mode .todo-item {
-    background-color: #3b3b3b;
-}
-
-.dark-mode .todo-item:hover {
-    background-color: #4a4a4a;
 }
 
 /* Icono o marca de tarea (si lo añades más adelante) */
