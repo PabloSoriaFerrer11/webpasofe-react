@@ -15,7 +15,6 @@ function Todo(){
                 {/* 🔧 Técnico */}
                 {listItem("Implementar menú hamburger responsive para móvil", false)}
                 {listItem("Hacer dropdowns del nav accesibles (aria-expanded, teclado, focus visible)", false)}
-                {listItem("Formulario de contacto funcional con EmailJS o Formspree", false)}
                 {listItem("Refactor CSS: agrupar overrides dark mode, migrar a CSS Modules por componente", false)}
                 {listItem("Cambio de HOST de la WEB. Implementación de dependencias.", false)}
                 {listItem("Mejorar estilo de los botones de la WEB.", false)}
@@ -28,7 +27,7 @@ function Todo(){
                 {listItem("Migración de la WEB a REACT", true, "2026")}
                 {listItem("Añadir soporte para modo claro y oscuro con preferencias del usuario.", true, "2026")}
                 {listItem("Etiquetas en el meta", true, "2026")}
-                
+                {listItem("Formulario de contacto funcional con EmailJS o Formspree", true, "2026")}
             </ul>
         </div>
         </main>
