@@ -668,3 +668,121 @@
 body, .todo-container, .todo-item {
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
+
+/* ==== Unity Game Build Page ==== */
+.game-build-page {
+    padding: 1rem 0;
+}
+
+.unity-showcase {
+    display: grid;
+    grid-template-columns: 1.1fr 1.4fr;
+    gap: 1.5rem;
+    align-items: center;
+    margin-left: 0.4rem;
+}
+
+.game-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 1.2rem;
+    max-width: 560px;
+}
+
+.eyebrow {
+    color: #2471a3;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.game-copy h2 {
+    margin-bottom: 0;
+}
+
+.game-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.download-button,
+.secondary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.85rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.download-button {
+    background: linear-gradient(135deg, #1f7a8c, #2f80ed);
+    color: white;
+}
+
+.secondary-button {
+    background: transparent;
+    border: 1px solid #2f80ed;
+    color: #2f80ed;
+}
+
+.download-button:hover,
+.secondary-button:hover {
+    transform: translateY(-1px);
+    opacity: 0.96;
+}
+
+.game-note {
+    color: #4a5d6d;
+    font-size: 0.95rem;
+    text-align: left;
+}
+
+.unity-frame-card {
+    background: #0d1117;
+    border: 1px solid #2d3748;
+    border-radius: 14px;
+    padding: 0.75rem;
+    min-height: 470px;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.18);
+}
+
+.unity-frame {
+    width: 100%;
+    min-height: 420px;
+    height: 70vh;
+    max-height: 720px;
+    border: 0;
+    border-radius: 10px;
+    background: #000;
+}
+
+body.dark .eyebrow,
+body.dark .game-note {
+    color: #9ed2ff;
+}
+
+body.dark .secondary-button {
+    border-color: #9ed2ff;
+    color: #9ed2ff;
+}
+
+@media (max-width: 768px) {
+    .unity-showcase {
+        grid-template-columns: 1fr;
+    }
+
+    .unity-frame-card {
+        min-height: 360px;
+    }
+
+    .unity-frame {
+        height: 56vh;
+    }
+}

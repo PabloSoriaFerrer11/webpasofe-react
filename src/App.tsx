@@ -8,7 +8,8 @@ import { FlutterAMMPage } from './pages/proyects/FlutterAMMPage';
 import { WIPPage } from './pages/WIPPage';
 import { TodoPage } from './pages/TodoPage';
 import { HereticsPage } from './pages/proyects/HereticsPage';
-import { StrategyPage } from "./pages/proyects/StrategyPage";
+import { StrategyPage } from './pages/proyects/StrategyPage';
+import { UnityGamePage } from './pages/proyects/UnityGamePage';
 
 import './css/styles.css'
 
@@ -32,6 +33,7 @@ function App() {
         <Route path="/proyectos/flutter-amm" element={<FlutterAMMPage />} />
         <Route path="/proyectos/Heretics" element={<HereticsPage />} />
         <Route path="/proyectos/estrategy" element={<StrategyPage />} />
+        <Route path="/proyectos/unity-game" element={<UnityGamePage />} />
       </Routes>
       <PageFooter />
     </BrowserRouter>
