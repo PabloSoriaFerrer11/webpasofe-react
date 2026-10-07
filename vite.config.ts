@@ -1,9 +1,9 @@
 import fs from 'node:fs'
 import path from 'node:path'
-import { defineConfig } from 'vite'
+import { defineConfig, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
 
-const copyPublicAssets = () => ({
+const copyPublicAssets = (): Plugin => ({
   name: 'copy-public-assets',
   apply: 'build',
   generateBundle() {
