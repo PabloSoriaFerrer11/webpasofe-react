@@ -1,0 +1,1 @@
+Se ha creado un bucket en cloudflare para dejar el juego ahí.

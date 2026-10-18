@@ -1,4 +1,4 @@
-const UNITY_BUILD_PATH = '/unity-game/index.html';
+const UNITY_BUILD_URL = 'https://galaxystrike.dev-pasofe.com/unity-game/index.html';
 const WINDOWS_DOWNLOAD_PATH = '/downloads/WindowsBuild.zip';
 const WINDOWS_DOWNLOAD_AVAILABLE = false; // Cambia a true si el archivo ZIP está disponible para descargar
 
@@ -24,7 +24,7 @@ export const UnityGamePage = () => {
                 Descarga de Windows no disponible
               </span>
             )}
-            <a className="secondary-button" href={UNITY_BUILD_PATH} target="_blank" rel="noreferrer">
+            <a className="secondary-button" href={UNITY_BUILD_URL} target="_blank" rel="noreferrer">
               Abrir build web completa
             </a>
           </div>
@@ -37,7 +37,7 @@ export const UnityGamePage = () => {
         <div className="unity-frame-card">
           <iframe
             className="unity-frame"
-            src={UNITY_BUILD_PATH}
+            src={UNITY_BUILD_URL}
             title="Build del juego en Unity"
             loading="lazy"
           />
