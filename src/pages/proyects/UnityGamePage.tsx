@@ -1,6 +1,6 @@
 const UNITY_BUILD_PATH = '/unity-game/index.html';
 const WINDOWS_DOWNLOAD_PATH = '/downloads/WindowsBuild.zip';
-const WINDOWS_DOWNLOAD_AVAILABLE = true;
+const WINDOWS_DOWNLOAD_AVAILABLE = false; // Cambia a true si el archivo ZIP está disponible para descargar
 
 export const UnityGamePage = () => {
   return (
@@ -8,10 +8,10 @@ export const UnityGamePage = () => {
       <section className="unity-showcase">
         <div className="game-copy">
           <p className="eyebrow">Unity • WebGL</p>
-          <h2>Mi juego en Unity</h2>
+          <h2>Galaxy Strike</h2>
           <p>
-            Este es mi primer juego desarrollado en Unity, que fue exportado a Web para poder ser jugado directamente desde el navegador.
-            También se encuentra disponible un archivo ZIP para Windows que contiene la build completa del juego.
+            Este juego forma parte del desarrollo de un curso de UDEMY que completé y me ayudo a comprender
+            mejor el motor de Unity
           </p>
 
           <div className="game-actions">
