@@ -1,0 +1,11 @@
+/unity-game/Build/*.js.br
+  Content-Encoding: br
+  Content-Type: application/javascript
+
+/unity-game/Build/*.wasm.br
+  Content-Encoding: br
+  Content-Type: application/wasm
+
+/unity-game/Build/*.data.br
+  Content-Encoding: br
+  Content-Type: application/octet-stream
