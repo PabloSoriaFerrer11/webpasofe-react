@@ -10,7 +10,14 @@ const copyPublicAssets = (): Plugin => ({
     const rootDir = process.cwd()
     const publicDir = path.join(rootDir, 'public')
     const outDir = path.join(rootDir, 'dist')
-    const entries = ['unity-game', 'favicon', 'favicon-32x32.png', 'vite.svg']
+    const entries = [
+      'unity-game',
+      'favicon',
+      'favicon-32x32.png',
+      'vite.svg',
+      'CV - Pablo Soria Ferrer - ES.pdf',
+      'CV - Pablo Soria Ferrer - EN.pdf',
+    ]
 
     for (const entry of entries) {
       const source = path.join(publicDir, entry)

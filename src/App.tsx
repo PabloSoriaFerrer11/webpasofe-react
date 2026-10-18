@@ -10,6 +10,7 @@ import { TodoPage } from './pages/TodoPage';
 import { HereticsPage } from './pages/proyects/HereticsPage';
 import { StrategyPage } from './pages/proyects/StrategyPage';
 import { UnityGamePage } from './pages/proyects/UnityGamePage';
+import { MinecraftServerPage } from './pages/proyects/MinecraftServerPage';
 
 import './css/styles.css'
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/proyectos/Heretics" element={<HereticsPage />} />
         <Route path="/proyectos/estrategy" element={<StrategyPage />} />
         <Route path="/proyectos/unity-game" element={<UnityGamePage />} />
+        <Route path="/proyectos/minecraft-server" element={<MinecraftServerPage />} />
       </Routes>
       <PageFooter />
     </BrowserRouter>

@@ -2,9 +2,11 @@ function Todo(){
     return (
         <main>
         <div className="">
-            <h2>"To Do" List</h2>
-            <p className="todo-description">Esta es una lista de posibles tareas de mejora que podríamos desarrollar para la WEB. 
+            <div className="">
+                <h2>"To Do" List</h2>
+                <p className="todo-description">Esta es una lista de posibles tareas de mejora que podríamos desarrollar para la WEB. 
                 Se han detallado para indicar el conocimiento de nuevas tecnologías y mostrar la creatividad. </p>
+            </div>
             <ul className="todo-list">
 
                 {/* 🎨 Contenido CV */}

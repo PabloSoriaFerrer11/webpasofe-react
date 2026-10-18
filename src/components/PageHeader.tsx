@@ -37,6 +37,7 @@ export const PageHeader = () => {
                     <ul className="dropdown-menu">
                         <li><Link to="/proyectos/estrategy">Estrategy</Link></li>
                         <li><Link to="/proyectos/Heretics">Heretics</Link></li>
+                        <li><Link to="/proyectos/minecraft-server">Servidor de Minecraft</Link></li>
                     </ul>
                 </li>
             </ul>
